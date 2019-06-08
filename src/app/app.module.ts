@@ -8,17 +8,31 @@ import {SidenavComponent} from './sidenav/sidenav.component';
 import {MaterialModule} from './material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {FormsModule} from '@angular/forms';
+import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
+
+import {RouterModule, Routes} from '@angular/router';
+import {StoreComponent} from './store/store.component';
+
+const appRoutes: Routes = [
+  {path: 'cart', component: ShoppingCartComponent},
+  {path: 'store', component: StoreComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    SidenavComponent
+    SidenavComponent,
+    ShoppingCartComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    RouterModule
   ],
   exports: [AppComponent],
   providers: [],

@@ -1,0 +1,13 @@
+<mat-card
+  *ngFor="let item of items"
+>
+  <mat-card-header>{{item.title}}</mat-card-header>
+  <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+  <mat-card-content>
+    Price: {{item.price}}
+  </mat-card-content>
+</mat-card>
+<mat-icon
+  routerLink="/cart"
+>add-to-cart
+</mat-icon>

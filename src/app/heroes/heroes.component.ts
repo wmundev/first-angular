@@ -7,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
   hero = 'Windstorm';
+  readonly heroes = ['Windstorm', 'Flash', 'Hulk', 'Ice Guy'];
+  heroName = '';
 
   constructor() {
 

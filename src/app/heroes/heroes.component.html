@@ -1,3 +1,20 @@
 <p>
-  heroes works! {{hero}}
+  Hero Component
 </p>
+<h2 *ngFor="let hero of heroes">
+  {{hero}}
+</h2>
+<h1>
+  lets do some ajax calls?
+</h1>
+<form>
+  <input
+    [(ngModel)]="heroName"
+    type="text"
+    name="heroName"
+  />
+
+  <p>{{heroName}}</p>
+
+</form>
+
