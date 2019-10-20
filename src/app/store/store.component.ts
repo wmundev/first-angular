@@ -6,7 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
-  // TODO, get items from database
+
+  // TODO, get items from database maybe?
   items =
     [{
       title: 'ice cream',
@@ -32,7 +33,6 @@ export class StoreComponent implements OnInit {
 
 
   constructor() {
-    console.log('initialise store');
   }
 
   ngOnInit() {
