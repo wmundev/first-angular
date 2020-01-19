@@ -1,6 +1,6 @@
 # FirstAngular
+This is an angular project that uses Jest as its test framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
 ## Development server
 
