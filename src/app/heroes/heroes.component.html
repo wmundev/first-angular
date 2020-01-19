@@ -2,19 +2,13 @@
   Hero Component
 </p>
 <h2 *ngFor="let hero of heroes">
-  {{hero}}
+  {{ hero }}
 </h2>
 <h1>
-  lets do some ajax calls?
+  I am the hero title
 </h1>
 <form>
-  <input
-    [(ngModel)]="heroName"
-    type="text"
-    name="heroName"
-  />
+  <input [(ngModel)]="heroName" type="text" name="heroName" />
 
-  <p>{{heroName}}</p>
-
+  <p>{{ heroName }}</p>
 </form>
-

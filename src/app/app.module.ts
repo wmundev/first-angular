@@ -1,22 +1,23 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import {AppComponent} from './app.component';
-import {HeroesComponent} from './heroes/heroes.component';
-import {SidenavComponent} from './sidenav/sidenav.component';
+import { AppComponent } from "./app.component";
+import { HeroesComponent } from "./heroes/heroes.component";
+import { SidenavComponent } from "./sidenav/sidenav.component";
 
-import {MaterialModule} from './material-module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from "./material-module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import {FormsModule} from '@angular/forms';
-import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
+import { FormsModule } from "@angular/forms";
+import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 
-import {RouterModule, Routes} from '@angular/router';
-import {StoreComponent} from './store/store.component';
+import { RouterModule, Routes } from "@angular/router";
+import { StoreComponent } from "./store/store.component";
+import { VoterComponent } from "./voter/voter.component";
 
 const appRoutes: Routes = [
-  {path: 'cart', component: ShoppingCartComponent},
-  {path: 'store', component: StoreComponent}
+  { path: "cart", component: ShoppingCartComponent },
+  { path: "store", component: StoreComponent }
 ];
 
 @NgModule({
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     HeroesComponent,
     SidenavComponent,
     ShoppingCartComponent,
-    StoreComponent
+    StoreComponent,
+    VoterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,4 +40,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
