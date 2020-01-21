@@ -1,6 +1,20 @@
 # FirstAngular
+
 This is an angular project that uses Jest as its test framework
 
+uses github pages to host this project
+
+hosted version can be found here [project website](https://wmundev.github.io/first-angular/)
+
+uses this project to deploy [Github pages](https://github.com/angular-schule/angular-cli-ghpages)
+
+type
+
+```
+ng deploy
+```
+
+to deploy to github pages
 
 ## Development server
 

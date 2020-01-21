@@ -2,11 +2,13 @@ import { async, TestBed } from "@angular/core/testing";
 import { AppComponent } from "./app.component";
 import { MaterialModule } from "./material-module";
 import { AppModule } from "./app.module";
+import { APP_BASE_HREF } from "@angular/common";
 
 describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [AppModule, MaterialModule]
+      imports: [AppModule, MaterialModule],
+      providers: [{ provide: APP_BASE_HREF, useValue: "/" }]
     }).compileComponents();
   }));
 
@@ -14,20 +16,5 @@ describe("AppComponent", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'first-angular'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("i-am-ze title");
-  });
-
-  it("should render title in a h1 tag", () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector("h1").textContent).toContain(
-      "I am the hero title"
-    );
   });
 });

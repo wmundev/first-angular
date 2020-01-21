@@ -1,20 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>i am stuff in the sidenav</p>
-    <p> catch me if you can</p>
-
-  </mat-drawer>
-  <div class="example-sidenav-content" style="text-align:center">
-    <mat-icon (click)="drawer.toggle()">menu</mat-icon>
-
-
-    <!--<h1>-->
-    <!--Welcome to {{ title }}!-->
-    <!--</h1>-->
-    <app-heroes></app-heroes>
-    <app-shopping-cart></app-shopping-cart>
-
-
-  </div>
-</mat-drawer-container>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<router-outlet>
+  <app-spinner></app-spinner>
+</router-outlet>
