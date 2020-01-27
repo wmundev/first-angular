@@ -21,6 +21,8 @@ import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 import { SidenavComponent } from "./sidenav/sidenav.component";
 import { StoreComponent } from "./store/store.component";
 import { VoterComponent } from "./voter/voter.component";
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -43,7 +45,10 @@ import { VoterComponent } from "./voter/voter.component";
     FlexLayoutModule,
     HttpClientModule,
     SharedModule,
-    RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes),
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production
+    })
   ],
   providers: [
     {
