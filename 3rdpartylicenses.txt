@@ -170,6 +170,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 chartist
 MIT OR WTFPL
 Copyright (c) 2013 Gion Kunz <gion.kunz@gmail.com>
